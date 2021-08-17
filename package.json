@@ -7,7 +7,7 @@
     "start": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint .",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "coverage": "jest --coverage",
     "doc": "jsdoc -c jsdoc.conf.json",
     "preshow:coverage": "npm run coverage",
@@ -48,6 +48,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "core-js": "^3.16.1"
+    "core-js": "^3.16.1",
+    "jest": "^27.0.6"
   }
 }
