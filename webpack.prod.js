@@ -5,6 +5,9 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'production',
+  output: {
+    publicPath: '/Continuous-Deployment/',
+  },
   optimization: {
     minimize: true,
     minimizer: [
